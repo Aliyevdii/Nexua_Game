@@ -1,7 +1,7 @@
 
 {
-  "name": "Crocodile_Bot",
-  "description": "kelime oyunu",
+  "name": "Nexus_Game_Bot",
+  "description": "Söz Oyunu",
   "keywords": [
     "telegram",
     "best",
@@ -9,7 +9,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/Goqerti/sozbotragnarok",
+  "repository": "https://github.com/Aliyevdii/Nexua_Game",
   
   "addons": [
     {

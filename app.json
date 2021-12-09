@@ -9,8 +9,17 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/Aliyevdii/Nexua_Game",
-  
+    "website": "https://t.me/iron_Blood_Gurup",
+    "repository": "https://github.com/Aliyevdii/Nexua_Game",
+    "success_url": "",
+    "env": {
+        "API_ID": {https://t.me/dA_l_i_y_e_v_d_i
+            "description": "API_ID'niz my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "API_HASH'iniz içinm my.telegram.org",
+            "required": true
   "addons": [
     {
       "plan": "heroku-postgresql",
@@ -19,4 +28,25 @@
       }
     }
   ]
+}
+},
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
 }

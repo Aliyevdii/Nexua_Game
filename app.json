@@ -13,7 +13,7 @@
     "repository": "https://github.com/Aliyevdii/Nexua_Game",
     "success_url": "",
     "env": {
-        "API_ID": {https://t.me/A_l_i_y_e_v_d_i
+        "API_ID": {
             "description": "API_ID'niz my.telegram.org",
             "required": true
         },

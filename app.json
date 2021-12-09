@@ -1,17 +1,16 @@
-
 {
-  "name": "Nexus_Game_Bot",
-  "description": "Söz Oyunu",
-  "keywords": [
-    "telegram",
-    "best",
-    "group",
-    "manager",
-    "3"
-  ],
-    "website": "https://t.me/iron_Blood_Gurup",
+    "name": "Nexus Musiqi Bot",
+    "description": "pytgcalls ve pyrogram tarafından desteklenen Telegram Grup Görüntülü Sohbet aracılığıyla Video ve Müzik Akışı için Telegram botu",
+    "logo": "https://telegra.ph/file/3837f56009786446c7ac7.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream",
+        "pyrogram"
+    ],
+    "website": "https://t.me/Nexus_Bots",
     "repository": "https://github.com/Aliyevdii/Nexua_Game",
-    "success_url": "",
+    "success_url": "https://t.me/dA_l_i_y_e_v_d_i",
     "env": {
         "API_ID": {
             "description": "API_ID'niz my.telegram.org",
@@ -20,16 +19,8 @@
         "API_HASH": {
             "description": "API_HASH'iniz içinm my.telegram.org",
             "required": true
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "10"
-      }
-    }
-  ]
-}
-},
+        }
+    },
     "addons": [],
     "buildpacks": [
         {

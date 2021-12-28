@@ -66,10 +66,10 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/Nexus_soz_game_bot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="🌐 Support", url="https://t.me/NEXUS_MMC")
-        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/iron_Blood_Gurup")
-        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/A_l_i_y_e_v_d_i")
+        addme = InlineKeyboardButton(text="🤓 Qrupa əlavə edin!", url="https://t.me/BSsozoyunbot?startgroup=a")
+        sohbet = InlineKeyboardButton(text="⚕️ Support", url="https://t.me/BLACK_MMC")
+        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/Cat_House_Gurups")
+        admin = InlineKeyboardButton(text="👨🏻‍💻 Owner", url="https://t.me/F_r_o_z_e_d_i")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -87,7 +87,7 @@ def command_start(update, context: CallbackContext):
         game = get_or_create_game(chat_id)
         game.start()
 
-        update.message.reply_text('Söz Oyunu Başladı✨'.format(username), reply_to_message_id=True)
+        update.message.reply_text('Söz Oyunu Başladı🤓'.format(username), reply_to_message_id=True)
 
         set_master(update, context)
 

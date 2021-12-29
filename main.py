@@ -66,14 +66,14 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🤓 Qrupa əlavə edin!", url="https://t.me/BSsozoyunbot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="⚕️ Support", url="https://t.me/BLACK_MMC")
-        oyun = InlineKeyboardButton(text="👾 Oyun Qrupumuz", url="https://t.me/Cat_House_Gurups")
-        admin = InlineKeyboardButton(text="👨🏻‍💻 Owner", url="https://t.me/F_r_o_z_e_d_i")
+        addme = InlineKeyboardButton(text="🤓 Qrupa əlavə edin!", url="https://t.me/BSsozoyunbottartgroup=a")
+        sohbet = InlineKeyboardButton(text="💭 Söhbət Qrupumuz", url="https://t.me/Cat_House_Gurups")
+        oyun = InlineKeyboardButton(text="⚕️ Support", url="https://t.me/BLACK_MMC")
+        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/F_r_o_z_e_d_i")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('Salam mən söz oyun botuyam məni gurupnuza ekləyərək əyləncəli hala gətirə bilərsiniz ətraflı məlumat üçün /help yazın!', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('⚕️Salam mən söz oyun botuyam məni gurupnuza ekləyərək əyləncəli hala gətirə bilərsiniz ətraflı məlumat üçün /help yazın!', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
@@ -87,7 +87,7 @@ def command_start(update, context: CallbackContext):
         game = get_or_create_game(chat_id)
         game.start()
 
-        update.message.reply_text('Söz Oyunu Başladı🤓'.format(username), reply_to_message_id=True)
+        update.message.reply_text('Söz Oyunu Başladı✨'.format(username), reply_to_message_id=True)
 
         set_master(update, context)
 
